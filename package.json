@@ -14,7 +14,7 @@
     "test:python": "python -m unittest discover -s tests -p \"test_*.py\"",
     "test:e2e": "playwright test",
     "check:privacy": "node scripts/check-public-privacy.mjs",
-    "check": "pnpm run lint && pnpm run test && pnpm run check:privacy && pnpm run build"
+    "check": "pnpm run lint && pnpm run test && pnpm run build && pnpm run check:privacy"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.4",

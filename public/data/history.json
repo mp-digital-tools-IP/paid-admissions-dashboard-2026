@@ -1,24 +1,28 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "points": [
     {
       "date": "2026-08-13",
       "snapshotAt": "2026-08-13T22:57:54+03:00",
-      "publishedAt": "2026-08-14T03:51:58+03:00",
+      "publishedAt": "2026-08-14T05:21:02+03:00",
       "metrics": {
-        "active": 1578,
-        "signed": 1183,
-        "paid": 698,
-        "discounted": 1301,
+        "rows": 3613,
+        "contracts": 3608,
+        "active": 3456,
+        "signed": 2345,
+        "paid": 865,
+        "discounted": 2864,
         "listPriceMin": 77500,
         "listPriceMax": 408000,
-        "listPriceTotal": 292478350,
-        "contractAmount": 263756515,
-        "portfolio": 193673205,
-        "payment": 113288873,
+        "listPriceTotal": 678233450,
+        "contractAmount": 614271655,
+        "portfolio": 398547860,
+        "reportedPayment": 143023403,
+        "uniqueContractPayment": 142718003,
+        "uniquePeople": 1856,
         "financialTarget": 178000000,
         "reference2025": 279000000,
-        "remainingToTarget": 64711127
+        "remainingToTarget": 34976597
       }
     }
   ]
