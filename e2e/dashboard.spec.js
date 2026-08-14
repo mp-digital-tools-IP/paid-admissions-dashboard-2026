@@ -20,14 +20,37 @@ test('magistracy uses its own PFHD goal', async ({ page }) => {
   await expect(page.getByText('Цель выбранного академического среза')).toBeVisible()
 })
 
-test('priority, citizenship and chart controls work', async ({ page }) => {
+test('priority and citizenship filters update the faculty slice', async ({ page }) => {
   await page.goto('/')
   if ((await page.viewportSize()).width < 768) await page.getByRole('button', { name: /Фильтры/ }).click()
   await page.getByTestId('filter-priority').selectOption('2')
   await page.getByTestId('filter-citizenship').selectOption('Иностранное')
-  await expect(page.getByTestId('comparison-chart')).toBeVisible()
-  await page.getByLabel('Маркетинговый план').check()
-  await expect(page.getByTestId('quality-panel')).toBeVisible()
+  await expect(page.getByTestId('faculty-list')).toBeVisible()
+  await expect(page.getByText('Каждый факультет показан один раз.')).toBeVisible()
+  await page.getByRole('button', { name: 'Сбросить' }).click()
+  await expect(page.getByTestId('filter-priority')).toHaveValue('Все')
+  await expect(page.getByTestId('filter-citizenship')).toHaveValue('Все')
+})
+
+test('usability: faculties are unique and Favorsky programs stay accessible', async ({ page }) => {
+  const favorsky = 'Институт графики и искусства книги имени В. А. Фаворского'
+  const fdr = 'Передовая инженерная школа технологического лидерства «FDR»'
+  await page.goto('/')
+  await expect(page.getByText('Почему итог отличается от прежнего среза')).toHaveCount(0)
+  await expect(page.locator('.level-heading, .form-heading')).toHaveCount(0)
+  const titles = await page.locator('.faculty-card__title b').allTextContents()
+  expect(new Set(titles).size).toBe(titles.length)
+  expect(titles.filter((title) => title === fdr)).toHaveLength(1)
+  expect(titles.filter((title) => title === favorsky)).toHaveLength(1)
+
+  if ((await page.viewportSize()).width < 768) await page.getByRole('button', { name: /Фильтры/ }).click()
+  await page.getByTestId('filter-level').selectOption('Бакалавриат и специалитет')
+  await page.getByTestId('filter-faculty').selectOption(favorsky)
+  await expect(page.getByRole('heading', { name: favorsky })).toBeVisible()
+  await page.locator('.faculty-card__summary').filter({ hasText: favorsky }).click()
+  const table = page.getByTestId('direction-table')
+  await expect(table).toBeVisible()
+  await expect(table.getByRole('columnheader', { name: 'После удаления дублей' })).toHaveCount(0)
 })
 
 test('has no page-wide horizontal overflow', async ({ page }) => {

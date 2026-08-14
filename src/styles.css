@@ -6,38 +6,18 @@
 @media(max-width:390px){.metric{flex-basis:88vw}.quality-grid{grid-template-columns:1fr}.chart-panel .panel__heading{display:grid}.legend{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-/* Paid admissions dashboard v2: complete-scope views */
-.filters{grid-template-columns:.85fr .85fr 1.25fr 1.35fr .9fr .9fr .9fr}
-.level-order{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 18px}
-.level-order span{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:11px;font-size:13px;font-weight:700}
-.level-order b{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#111;color:#fff;font-size:12px}
-.comparison-panel{padding-bottom:18px}
-.metric-toggles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.metric-toggles label{display:flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fafafa;font-size:12px;font-weight:700;cursor:pointer}
-.metric-toggles input{width:16px;height:16px;accent-color:var(--red)}
-.metric-toggles i{width:9px;height:9px;border-radius:50%}
-.tone-red{background:#ed1b2f!important}.tone-black{background:#151515!important}.tone-gray{background:#8c8c8c!important}.tone-orange{background:#f28c28!important}.tone-blue{background:#3a6fd8!important}.tone-green{background:#2e9f68!important}
-.comparison-chart{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.comparison-row{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-.comparison-row header{display:grid;gap:3px;padding:12px 14px;background:#151515;color:#fff}
-.comparison-row header b{font-size:13px}.comparison-row header span{font-size:11px;color:#bbb}
-.comparison-row>div{display:grid;gap:9px;padding:13px}
-.comparison-bar{display:grid;grid-template-columns:118px minmax(60px,1fr) auto;gap:8px;align-items:center}
-.comparison-bar>span{font-size:10px;color:#666}.comparison-bar>div{height:7px;background:#eee;border-radius:9px;overflow:hidden}.comparison-bar>div i{display:block;height:100%;min-width:2px;border-radius:9px}.comparison-bar>b{font-size:10px;white-space:nowrap}
-.reconciliation-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.reconciliation-flow article{padding:16px;border-radius:12px;background:#151515;color:#fff;display:grid;gap:6px}
-.reconciliation-flow article:first-child{background:var(--red)}
-.reconciliation-flow small,.reconciliation-flow span{font-size:11px;color:#ccc}.reconciliation-flow article:first-child small,.reconciliation-flow article:first-child span{color:#fff}.reconciliation-flow strong{font-size:23px}
-.reconciliation-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
-.reconciliation-steps article{padding:13px;background:#f4f4f4;border-radius:9px;display:grid;gap:4px}.reconciliation-steps b{font-size:16px}.reconciliation-steps span{font-size:11px;font-weight:700}.reconciliation-steps small{font-size:10px;color:#777}
-.scope-sections{display:grid;gap:26px}.scope-section{display:grid;gap:10px}.level-heading{margin:10px 0 0;padding:13px 16px;background:#111;color:#fff;border-left:5px solid var(--red);font-size:20px;border-radius:9px}.form-heading{display:flex;justify-content:space-between;gap:15px;align-items:center;padding:11px 14px;background:#f1f1f1;border-radius:8px}.form-heading div{display:grid;gap:3px}.form-heading b{font-size:15px}.form-heading span{font-size:11px;color:#666}.form-heading>span{font-weight:700;color:#111}
+/* Paid admissions dashboard: management overview */
+.filters{grid-template-columns:repeat(4,minmax(0,1fr))}
+.kpi-strip{grid-template-columns:repeat(3,minmax(0,1fr))}
 .faculty-card__summary{grid-template-columns:minmax(250px,2fr) repeat(5,minmax(90px,1fr)) 24px}
 .faculty-card__summary>span:not(.faculty-card__title)>small:last-child{font-size:9px;text-transform:none;letter-spacing:0}
+.faculty-card table{min-width:1460px}
 .compact-table table{min-width:900px}.compact-table th:first-child,.compact-table td:first-child{min-width:110px}
 .row-warning{background:#fff8e8}.row-warning td:first-child small{color:#9a6400}
-@media(max-width:1380px){.filters{grid-template-columns:repeat(4,1fr)}.comparison-chart{grid-template-columns:repeat(2,1fr)}.faculty-card__summary{grid-template-columns:minmax(220px,2fr) repeat(3,1fr) 24px}.faculty-card__summary>span:nth-of-type(4),.faculty-card__summary>span:nth-of-type(5){display:none}.reconciliation-steps{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:900px){.level-order{grid-template-columns:1fr}.comparison-chart{grid-template-columns:1fr}.reconciliation-flow{grid-template-columns:1fr}.faculty-card__summary{grid-template-columns:2fr repeat(2,1fr) 24px}}
-@media(max-width:767px){.filters{grid-template-columns:1fr}.level-order{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-right:-14px;padding-right:14px}.level-order span{flex:0 0 82vw;scroll-snap-align:start}.comparison-bar{grid-template-columns:100px minmax(45px,1fr) auto}.comparison-row header{padding:11px}.reconciliation-steps{grid-template-columns:1fr 1fr}.faculty-card__summary{grid-template-columns:1fr 20px}.faculty-card__summary>span{display:grid!important}.form-heading{align-items:flex-start}.form-heading>span{text-align:right}.level-heading{font-size:17px}.compact-table{max-width:calc(100vw - 60px)}}
-@media(max-width:390px){.metric-toggles label{width:100%}.reconciliation-steps{grid-template-columns:1fr}.comparison-bar{grid-template-columns:92px 1fr}.comparison-bar>b{grid-column:2;text-align:right}.form-heading{display:grid}.form-heading>span{text-align:left}}
-
-.faculty-card table{min-width:1580px}
+.reset-filters{min-height:43px;align-self:end;display:flex;align-items:center;justify-content:center;gap:7px;border:1px solid #d5d5d5;border-radius:8px;background:#fff;color:#222;font-weight:700}
+.reset-filters:disabled{opacity:.38;cursor:default}
+.year-reference{margin:-8px 2px 20px;color:#666;font-size:13px}.year-reference b{color:#111}
+.reference-panel{padding:0;overflow:hidden}.reference-panel summary{min-height:76px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none}.reference-panel summary::-webkit-details-marker{display:none}.reference-panel summary>span{display:grid;gap:5px}.reference-panel summary b{font-size:20px}.reference-panel[open] summary svg{transform:rotate(180deg)}.reference-intro{margin:0;padding:0 22px 18px;color:var(--muted);font-size:13px}.reference-panel .table-scroll{border-top:1px solid var(--line)}
+@media(max-width:1380px){.filters{grid-template-columns:repeat(4,1fr)}.faculty-card__summary{grid-template-columns:minmax(220px,2fr) repeat(3,1fr) 24px}.faculty-card__summary>span:nth-of-type(3),.faculty-card__summary>span:nth-of-type(5){display:none}}
+@media(max-width:900px) and (min-width:768px){.kpi-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.faculty-card__summary{grid-template-columns:1fr 20px}.faculty-card__summary>span{display:grid!important}.faculty-card__summary>span:not(.faculty-card__title){grid-template-columns:1fr 1fr;grid-column:1/-1;padding-top:8px;border-top:1px solid #eee}.faculty-card__summary>span:not(.faculty-card__title) b{text-align:right}.faculty-card__summary>svg:last-child{grid-column:2;grid-row:1}}
+@media(max-width:767px){.filters{grid-template-columns:1fr}.reset-filters{width:100%;margin-top:2px}.year-reference{margin-top:-2px}.reference-panel summary{padding:16px}.reference-intro{padding:0 16px 16px}.compact-table{max-width:calc(100vw - 60px)}}

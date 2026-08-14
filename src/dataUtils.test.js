@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ALL, JOINT_FACULTY, completionLabel, displayFaculty, filterPlan, filterSegments, planTotals, sumRows, uniquePeopleFor } from './dataUtils.js'
+import { ALL, JOINT_FACULTY, canonicalFaculty, completionLabel, displayFaculty, filterPlan, filterSegments, groupDirections, groupFaculty, planTotals, sumRows, uniquePeopleFor } from './dataUtils.js'
 
 const filters = { level: ALL, form: ALL, faculty: ALL, direction: ALL, citizenship: ALL, discount: ALL, priority: ALL }
 const joint = { level: 'Магистратура', form: 'Очная', code: '01.04.01', directionName: 'Тест', facultyScopes: ['А', 'Б'], joint: true, pfhdTarget: 10, marketingTarget: 20 }
@@ -29,5 +29,20 @@ describe('dashboard aggregation', () => {
   })
   it('does not calculate a percentage for zero plan', () => {
     expect(completionLabel(3, 0)).toBe('Нет плана')
+  })
+  it('merges full and abbreviated faculty names into one card', () => {
+    const canonical = 'Передовая инженерная школа технологического лидерства «FDR»'
+    const plan = { ...joint, joint: false, facultyScopes: ['ПИШ ТЛ FDR'] }
+    const segment = { ...actual, joint: false, facultyScopes: ['Передовая инженерная школа технологического лидерства "FDR"'] }
+    const snapshot = { metrics: { uniquePeople: 0 } }
+    expect(canonicalFaculty(plan.facultyScopes[0])).toBe(canonical)
+    expect(groupFaculty([plan], [segment], snapshot, filters).map((row) => row.name)).toEqual([canonical])
+  })
+  it('shows one direction across several forms', () => {
+    const plan = { ...joint, joint: false, facultyScopes: ['А'] }
+    const secondForm = { ...plan, form: 'Очно-заочная' }
+    const rows = groupDirections([plan, secondForm], [], 'А')
+    expect(rows).toHaveLength(1)
+    expect(rows[0].form).toBe('Очная, Очно-заочная')
   })
 })
