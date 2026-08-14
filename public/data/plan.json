@@ -1,0 +1,3208 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "ПФХД2 (13.08.2026).xlsx",
+    "sha256": "3f81c16793c1fa217c92f25fc4cdf3140aa779e561c5c3c8f2f1e66a3649eea8"
+  },
+  "totals": {
+    "pfhdTarget": 1215,
+    "marketingTarget": 5068
+  },
+  "sourceControlTotals": {
+    "pfhdTarget": 1250,
+    "marketingTarget": 5023,
+    "formulaErrors": 3
+  },
+  "reconciliation": {
+    "pfhdDelta": 35,
+    "marketingDelta": -45,
+    "formulaErrors": 3,
+    "status": "Групповые итоги содержат ошибки формул; детальные строки являются источником плана"
+  },
+  "records": [
+    {
+      "id": "908c8966c7325d",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.1.7",
+      "directionName": "1.1.7. Теоретическая механика, динамика машин",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "371dd10b329bf1",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.1.8",
+      "directionName": "1.1.8 Механика деформируемого твердого тела",
+      "facultyScopes": [
+        "Факультет базовых компетенций"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "512e0fef0179a0",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.2.1",
+      "directionName": "1.2.1. Искусственный интеллект и машинное обучение",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "8cd146c37e1f5a",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.3.11",
+      "directionName": "1.3.11 Физика полупроводников",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "99a7bdc6e86068",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.4.4",
+      "directionName": "1.4.4. Физическая химия",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c536015d7131e9",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.4.7",
+      "directionName": "1.4.7. Высокомолекулярные соединения",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "938fab935fcd45",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.5.6",
+      "directionName": "1.5.6. Биотехнология",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "5c7ee368a7ea12",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.1.1",
+      "directionName": "2.1.1. Строительные конструкции, здания и сооружения",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "d5ad6caa2df7ec",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.1.5",
+      "directionName": "2.1.5. Строительные материалы и изделия",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "f339ba63cfbdaf",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.1",
+      "directionName": "2.3.1. Системный анализ, управление и обработка информации, статистика",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "1a3dbe2bac7751",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.3",
+      "directionName": "2.3.3. Автоматизация и управление технологическими процессами и производствами",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "2604adba7410f4",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.3",
+      "directionName": "2.3.3. Автоматизация и управление технологическими процессами и производствами",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "3ced6749118946",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.3",
+      "directionName": "2.3.3. Автоматизация и управление технологическими процессами и производствами",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "01d24e39ca0928",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.8",
+      "directionName": "2.3.8. Информатика и информационные процессы",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "171ca3b27cb1f9",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.2",
+      "directionName": "2.4.2. Электротехнические комплексы и системы",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": true,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "0113077f9131f3",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.6",
+      "directionName": "2.4.6. Теоретическая и прикладная теплотехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "7c063df1aad14b",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.7",
+      "directionName": "2.4.7. Турбомашины и поршневые двигатели",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "df8022619d0c3f",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.8",
+      "directionName": "2.4.8. Машины и аппараты, процессы холодильной и криогенной техники",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "d7f63a5ef3da9f",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.11",
+      "directionName": "2.5.11 Наземные транспортно-технологические средства и комплексын",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»",
+        "Транспортный факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "75d56d1e479ac2",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.21",
+      "directionName": "2.5.21. Машины, агрегаты и технологические процессы",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "47bc7f0b27f723",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.22",
+      "directionName": "2.5.22. Управление качеством продукции. Стандартизация. Организация производства",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "fc0d8486d749fe",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.5",
+      "directionName": "2.5.5. Технология и оборудование механической и физико–технической обработки",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "136ed148fd9ddb",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.6",
+      "directionName": "2.5.6. Технология машиностроения",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "a92caa7112f82d",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.7",
+      "directionName": "2.5.7. Технологии и машины обработки давлением",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "7e0a04a6ede226",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.8",
+      "directionName": "2.5.8. Сварка, родственные процессы и технологии",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "c073690a4026f3",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.11",
+      "directionName": "2.6.11. Технология и переработка синтетических и природных полимеров и композитов",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "f30f8f7542d734",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.13",
+      "directionName": "2.6.13. Процессы и аппараты химических технологий",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 1
+    },
+    {
+      "id": "4d8c6713109ecc",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.17",
+      "directionName": "2.6.17. Материаловедение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 3
+    },
+    {
+      "id": "94c1e90e45431c",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.3",
+      "directionName": "2.6.3. Литейное производство",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4ab3617ce56d93",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.4",
+      "directionName": "2.6.4. Обработка металлов давлением",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0ef4e3ae4a207c",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.9.5",
+      "directionName": "2.9.5 Эксплуатация автомобильного транспорта",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "8a52df2a709641",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.10.1",
+      "directionName": "5.10.1 Теория и история культуры, искусства",
+      "facultyScopes": [
+        "Факультет базовых компетенций"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "974b14fdb28ae3",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.10.3",
+      "directionName": "5.10.3. Виды искусства (Изобразительное и декоративно-прикладное искусство и архитектура)",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 2
+    },
+    {
+      "id": "3233975d69889c",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.10.4",
+      "directionName": "5.10.4 Библиотековедение, библиографоведение, книговедение",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "84097cacb11974",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.12.4",
+      "directionName": "5.12.4. Когнитивное моделирование",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "db1d6bfb7b0d47",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.2.3",
+      "directionName": "5.2.3 Региональная и отрослевая экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 10
+    },
+    {
+      "id": "170b9d90f37f40",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.2.6",
+      "directionName": "5.2.6. Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 10
+    },
+    {
+      "id": "ba4ea2b0ef0f58",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.7.7",
+      "directionName": "5.7.7. Социальная и политическая философия",
+      "facultyScopes": [
+        "Факультет базовых компетенций"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "f31d3afdb98422",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.9.5",
+      "directionName": "5.9.5 Русский язык. Языки народов России",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 3
+    },
+    {
+      "id": "9726b5b8c6ec7e",
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.9.9",
+      "directionName": "5.9.9 Медиакоммуникации и журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 1
+    },
+    {
+      "id": "391bc3d86e65ed",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "01.03.02",
+      "directionName": "Прикладная математика и информатика (Программирование и интеллектуальные системы управления транспортом)",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "e8bf25359d79c1",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "08.03.01",
+      "directionName": "Строительство",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6d8e27b86c6731",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 100,
+      "marketingTarget": 200
+    },
+    {
+      "id": "58d42cf5f32846",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет машиностроения"
+      ],
+      "joint": true,
+      "pfhdTarget": 50,
+      "marketingTarget": 150
+    },
+    {
+      "id": "6d0b21dd3fd4d2",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 50,
+      "marketingTarget": 100
+    },
+    {
+      "id": "679650eefd64f4",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "10.03.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "427a0d5f17788d",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "10.05.03",
+      "directionName": "Информационная безопасность автоматизированных систем",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "df39aba66162ac",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "11.03.01",
+      "directionName": "Радиотехника (Интеллектуальная радиоэлектроника и промышленный интернет вещей)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "d1ad042c7bd6bd",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "13.03.01",
+      "directionName": "Теплоэнергетика и теплотехника (Интеллектуальные тепловые энергосистемы)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 25
+    },
+    {
+      "id": "47ac95cdc42903",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "13.03.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 25
+    },
+    {
+      "id": "e21d3fc3d57e48",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "13.03.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для транспорта и малой энергетики)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "dea4951038d398",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 30,
+      "marketingTarget": 100
+    },
+    {
+      "id": "384ec0ebeec587",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.02",
+      "directionName": "Технологические машины и оборудование (Реверс-инжиниринг процессов и оборудования)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "11b83e8908713c",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.03",
+      "directionName": "Прикладная механика (Программирование и цифровые технологии в динамике и прочности)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "8c1207ef3cf517",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.04",
+      "directionName": "Автоматизация технологических процессов и производств (Роботы и робототехнические комплексы)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "2ec63696b417d7",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.05",
+      "directionName": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c00e634c29897e",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.06",
+      "directionName": "Мехатроника и робототехника (Мехатронные системы в автоматизированном производстве)",
+      "facultyScopes": [
+        "ПИШ ТЛ FDR"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "19bda9981d456a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "19.03.01",
+      "directionName": "Биотехнология (Биотехнология)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "40984bddd6f0e5",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "20.03.01",
+      "directionName": "Техносферная безопасность (Экологическая безопасность и охрана труда)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "2151882ed944c1",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "22.03.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6cb190d8095967",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "22.03.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 30
+    },
+    {
+      "id": "86128eb1ae0911",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "23.03.02",
+      "directionName": "Наземные транспортно-технологические комплексы (Гоночные автомобили и мотоциклы)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c46addeb171b88",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "23.03.03",
+      "directionName": "Эксплуатация транспортно-технологических машин и комплексов",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 20
+    },
+    {
+      "id": "97256c41b0002a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 10
+    },
+    {
+      "id": "49d02b86c3507a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "27.03.02",
+      "directionName": "Управление качеством (Управление качеством на производстве)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "aa465e9b2a9973",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "27.03.04",
+      "directionName": "Управление в технических системах (Электронные системы управления)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "497004c65f3a41",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "27.03.05",
+      "directionName": "Инноватика",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6cd9a4acefae99",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "29.03.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Дизайн и технологии создания визуального контента; Бизнес-процессы упаковочного производства)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "cbe6c605bf4032",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "29.03.04",
+      "directionName": "Технология художественной обработки материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "1ef956e78b807a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "38.03.01",
+      "directionName": "Экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bae649bb8d02c0",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b39a19ea6e00d8",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "38.03.03",
+      "directionName": "Управление персоналом (Экономико-правовое обеспечение трудовых процессов)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b197658954d9f0",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": true,
+      "pfhdTarget": 20,
+      "marketingTarget": 100
+    },
+    {
+      "id": "0a3e1254ea33c8",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "42.03.02",
+      "directionName": "Журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "446138f1666917",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело (Книгоиздательское дело; Газетно-журнальное издательское дело)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 15,
+      "marketingTarget": 50
+    },
+    {
+      "id": "bd527a015c82e1",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "30ad1f8c017862",
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "54.05.03",
+      "directionName": "Графика (Художник анимации и компьютерной графики, Художник-график (Оформление печатной продукции))",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0ad8fc9343cc15",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "01.03.02",
+      "directionName": "Прикладная математика и информатика (Программирование и интеллектуальные системы управления транспортом)",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 25
+    },
+    {
+      "id": "b161ddd2827388",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "08.03.01",
+      "directionName": "Строительство",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "958a343581286f",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 105,
+      "marketingTarget": 390
+    },
+    {
+      "id": "d5b3f07fbacbec",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет машиностроения"
+      ],
+      "joint": true,
+      "pfhdTarget": 53,
+      "marketingTarget": 215
+    },
+    {
+      "id": "2889bcb3ae0002",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 30,
+      "marketingTarget": 250
+    },
+    {
+      "id": "35328352e4260f",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "10.03.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 21,
+      "marketingTarget": 100
+    },
+    {
+      "id": "c79114d1213305",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "10.05.03",
+      "directionName": "Информационная безопасность автоматизированных систем",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 50
+    },
+    {
+      "id": "e8019828ceedec",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "11.03.01",
+      "directionName": "Радиотехника (Интеллектуальная радиоэлектроника и промышленный интернет вещей)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 15
+    },
+    {
+      "id": "d21af9d2d02198",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.01",
+      "directionName": "Теплоэнергетика и теплотехника (Интеллектуальные тепловые энергосистемы)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 20
+    },
+    {
+      "id": "0358683c7ad8e2",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 7,
+      "marketingTarget": 40
+    },
+    {
+      "id": "fc681b88476195",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для транспорта и малой энергетики)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 10
+    },
+    {
+      "id": "3a8a9a5900c5be",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 15,
+      "marketingTarget": 45
+    },
+    {
+      "id": "00fcf9c5b1ade9",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.02",
+      "directionName": "Технологические машины и оборудование (Реверс-инжиниринг процессов и оборудования)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 10
+    },
+    {
+      "id": "d2f6f53bf59d29",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.03",
+      "directionName": "Прикладная механика (Программирование и цифровые технологии в динамике и прочности)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 10
+    },
+    {
+      "id": "c37d16b956e784",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.04",
+      "directionName": "Автоматизация технологических процессов и производств (Роботы и робототехнические комплексы)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 8,
+      "marketingTarget": 43
+    },
+    {
+      "id": "2f01cb38f616ee",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.05",
+      "directionName": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": true,
+      "pfhdTarget": 7,
+      "marketingTarget": 25
+    },
+    {
+      "id": "ebc51ff446ccdf",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.06",
+      "directionName": "Мехатроника и робототехника (Мехатронные системы в автоматизированном производстве)",
+      "facultyScopes": [
+        "ПИШ ТЛ FDR"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 30
+    },
+    {
+      "id": "875d85f89e37e2",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "19.03.01",
+      "directionName": "Биотехнология (Биотехнология)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 40
+    },
+    {
+      "id": "a62d9d895fc392",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "20.03.01",
+      "directionName": "Техносферная безопасность (Экологическая безопасность и охрана труда)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 5
+    },
+    {
+      "id": "e3626de6bb2c9d",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "22.03.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b18bfc2a9805f9",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "22.03.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bc1a841ede8f0c",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.03.02",
+      "directionName": "Наземные транспортно-технологические комплексы (Гоночные автомобили и мотоциклы)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 10
+    },
+    {
+      "id": "a58b86819a05ae",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.03.03",
+      "directionName": "Эксплуатация транспортно-технологических машин и комплексов",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "d52b3854296a13",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "8e998c93aa2848",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.02",
+      "directionName": "Управление качеством (Управление качеством на производстве)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 15
+    },
+    {
+      "id": "c1df0dc6a07203",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.04",
+      "directionName": "Управление в технических системах (Электронные системы управления)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 15
+    },
+    {
+      "id": "9de0347c5b7703",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.05",
+      "directionName": "Инноватика",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "ed6af328411a46",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "29.03.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Дизайн и технологии создания визуального контента; Бизнес-процессы упаковочного производства)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 20
+    },
+    {
+      "id": "95f9e2349b41f7",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "29.03.04",
+      "directionName": "Технология художественной обработки материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 13,
+      "marketingTarget": 40
+    },
+    {
+      "id": "8c1a2d67b0908d",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.01",
+      "directionName": "Экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 100
+    },
+    {
+      "id": "ce17086810ee76",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 100
+    },
+    {
+      "id": "0269b12500390a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.03",
+      "directionName": "Управление персоналом (Экономико-правовое обеспечение трудовых процессов)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 100
+    },
+    {
+      "id": "140e0bf3c7ef01",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": true,
+      "pfhdTarget": 26,
+      "marketingTarget": 200
+    },
+    {
+      "id": "5fd6d4171cb3b2",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.02",
+      "directionName": "Журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 50,
+      "marketingTarget": 100
+    },
+    {
+      "id": "2f43aeb51665aa",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело (Книгоиздательское дело; Газетно-журнальное издательское дело)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 35,
+      "marketingTarget": 100
+    },
+    {
+      "id": "18e7b3c9ee7103",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": true,
+      "pfhdTarget": 55,
+      "marketingTarget": 77
+    },
+    {
+      "id": "e8dbc3ca1cf68a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.05.03",
+      "directionName": "Графика (Художник анимации и компьютерной графики, Художник-график (Оформление печатной продукции))",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": false,
+      "pfhdTarget": 30,
+      "marketingTarget": 55
+    },
+    {
+      "id": "6c88c70cec34d3",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "01.03.02",
+      "directionName": "Прикладная математика и информатика (Программирование и интеллектуальные системы управления транспортом)",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c6aebf7f713ad8",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "08.03.01",
+      "directionName": "Строительство",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c24df4fa02e714",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "09.03.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "1b7df322642828",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "09.03.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет машиностроения"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "734dd28ec856fb",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 10,
+      "marketingTarget": 40
+    },
+    {
+      "id": "fb0d0e02b5ca76",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "10.03.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "9e92cbdd783f70",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "10.05.03",
+      "directionName": "Информационная безопасность автоматизированных систем",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "becf6776348849",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "11.03.01",
+      "directionName": "Радиотехника (Интеллектуальная радиоэлектроника и промышленный интернет вещей)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "85be59e9119d6a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "13.03.01",
+      "directionName": "Теплоэнергетика и теплотехника (Интеллектуальные тепловые энергосистемы)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4a0c5aecc60f5c",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "13.03.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "56feae3becd144",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "13.03.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для транспорта и малой энергетики)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "f21632ed71d03a",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "ce9c4867b372fc",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.02",
+      "directionName": "Технологические машины и оборудование (Реверс-инжиниринг процессов и оборудования)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "03697c458a69e3",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.03",
+      "directionName": "Прикладная механика (Программирование и цифровые технологии в динамике и прочности)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "7d8bd14dd739ad",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.04",
+      "directionName": "Автоматизация технологических процессов и производств (Роботы и робототехнические комплексы)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "822f4612d9bce2",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.05",
+      "directionName": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": true,
+      "pfhdTarget": 3,
+      "marketingTarget": 15
+    },
+    {
+      "id": "81edcdb2132183",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.06",
+      "directionName": "Мехатроника и робототехника (Мехатронные системы в автоматизированном производстве)",
+      "facultyScopes": [
+        "ПИШ ТЛ FDR"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bd2898b770ae82",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "19.03.01",
+      "directionName": "Биотехнология (Биотехнология)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "df9867a808cbfa",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "20.03.01",
+      "directionName": "Техносферная безопасность (Экологическая безопасность и охрана труда)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bae9eff341d3da",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "22.03.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0c25ad5825fac0",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "22.03.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 15
+    },
+    {
+      "id": "667447c81ed90c",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "23.03.02",
+      "directionName": "Наземные транспортно-технологические комплексы (Гоночные автомобили и мотоциклы)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "f81697b294364b",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "23.03.03",
+      "directionName": "Эксплуатация транспортно-технологических машин и комплексов",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "a3be610ed7a503",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "d156a37b446101",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "27.03.02",
+      "directionName": "Управление качеством (Управление качеством на производстве)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "818098c2a7960c",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "27.03.04",
+      "directionName": "Управление в технических системах (Электронные системы управления)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "2784a12da294c3",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "27.03.05",
+      "directionName": "Инноватика",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет экономики и управления"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4cdb4de3098b92",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "29.03.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Дизайн и технологии создания визуального контента; Бизнес-процессы упаковочного производства)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "7dbba55ee8e035",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "29.03.04",
+      "directionName": "Технология художественной обработки материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0ce4e81d5aaa26",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.01",
+      "directionName": "Экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 100
+    },
+    {
+      "id": "0abb7eb467a11b",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 100
+    },
+    {
+      "id": "6d150f03730fd3",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.03",
+      "directionName": "Управление персоналом (Экономико-правовое обеспечение трудовых процессов)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 100
+    },
+    {
+      "id": "31a084eca22f1b",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": true,
+      "pfhdTarget": 15,
+      "marketingTarget": 50
+    },
+    {
+      "id": "b3a4f8ae7b6477",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "42.03.02",
+      "directionName": "Журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "f27443aaa80eb8",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело (Книгоиздательское дело; Газетно-журнальное издательское дело)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bc341673f2dbc7",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": true,
+      "pfhdTarget": 65,
+      "marketingTarget": 100
+    },
+    {
+      "id": "b28119388dc9ab",
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "54.05.03",
+      "directionName": "Графика (Художник анимации и компьютерной графики, Художник-график (Оформление печатной продукции))",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4307207aea7f6d",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "01.04.02",
+      "directionName": "Прикладная математика и информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4e6667f6098674",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "08.04.01",
+      "directionName": "Строительство (Промышленное, гражданское и подземное строительство (нет лицензии)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "82e818a9cce63a",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "09.04.01",
+      "directionName": "Информатика и вычислительная техника (Интеллектуальные системы)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "43e303effd6882",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Бизнес-инжиниринг и управление цифровыми проектами)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "9c43a1e60d7c14",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Мобильные технологии; Технологии смешанной реальности)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "522a5092266bd6",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "10.04.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "fd33063c6abd31",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "13.04.01",
+      "directionName": "Теплоэнергетика и теплотехника (Распределенная тепловая энергетика)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "940375f3acbf52",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "13.04.02",
+      "directionName": "Электроэнергетика и электротехника (Интеллектуальные системы электрооборудования и промышленной электроники)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "e943984fb12c1f",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "13.04.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для инновационного транспорта)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "020a9b1e8d5ef8",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "15.04.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "724a83cef7eb01",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "15.04.02",
+      "directionName": "Технологические машины и оборудование (Промышленный инжиниринг)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "d54e28349d6817",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "15.04.04",
+      "directionName": "Автоматизация технологических процессов и производств (Промышленная автоматизация)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "3bac805d154034",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "15.04.06",
+      "directionName": "Мехатроника и робототехника (Промышленная мехатроника)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "a1fd32ae11466a",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "16.04.03",
+      "directionName": "Холодильная, криогенная техника и системы жизнеобеспечения (Криогенные технологии индустрии водорода и систем сжиженного газа)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "c8748745a31854",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "19.04.01",
+      "directionName": "Биотехнология (Промышленная биотехнология и биоинженерия)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "ce88e642455b48",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "20.04.01",
+      "directionName": "Техносферная безопасность",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 15
+    },
+    {
+      "id": "6e38ea6cc35f07",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "22.04.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6408272dd884e3",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "22.04.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 7,
+      "marketingTarget": 20
+    },
+    {
+      "id": "595cc0c64577be",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "23.04.02",
+      "directionName": "Наземные транспортно-технологические комплексы",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "7826e520413b01",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "27.04.01",
+      "directionName": "Стандартизация и метрология (Цифровые решения в метрологии и стандартизации)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 17,
+      "marketingTarget": 17
+    },
+    {
+      "id": "de98dcb5e97c39",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 15,
+      "marketingTarget": 70
+    },
+    {
+      "id": "b40aab42457990",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "27.04.04",
+      "directionName": "Управление в технических системах",
+      "facultyScopes": [
+        "Полиграфический факультет",
+        "Передовая школа инженерного дизайна"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "42821b3238e365",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "29.04.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Полиграфические технологии производства высокотехнологичной продукции)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4874163b9082a8",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "38.04.01",
+      "directionName": "Экономика (Экономика высокотехнологичных производств)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0f67a9d50bcf52",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "38.04.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "5e4d38d4a7f0d7",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "3ace1f7e4494a2",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "42.04.02",
+      "directionName": "Журналистика (Медиакоммуникации в креативных индустриях)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 25
+    },
+    {
+      "id": "059319bf38f95c",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "42.04.03",
+      "directionName": "Издательское дело (Современный издательский процесс:инновационной практики)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "d1d0134d2fbb24",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0befe90cf6f386",
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "54.04.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0153a63525df65",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "01.04.02",
+      "directionName": "Прикладная математика и информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": true,
+      "pfhdTarget": 10,
+      "marketingTarget": 70
+    },
+    {
+      "id": "1845ea9b604254",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "08.04.01",
+      "directionName": "Строительство (Промышленное, гражданское и подземное строительство (нет лицензии)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "5efc94954dc7b5",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "09.04.01",
+      "directionName": "Информатика и вычислительная техника (Интеллектуальные системы)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 40
+    },
+    {
+      "id": "e2e6fc1a75fd18",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Бизнес-инжиниринг и управление цифровыми проектами)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 25
+    },
+    {
+      "id": "dd08dc8b112bac",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Мобильные технологии; Технологии смешанной реальности)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 20,
+      "marketingTarget": 80
+    },
+    {
+      "id": "a7adc2965c2758",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "10.04.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 20,
+      "marketingTarget": 60
+    },
+    {
+      "id": "1d872b02997b1d",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "13.04.01",
+      "directionName": "Теплоэнергетика и теплотехника (Распределенная тепловая энергетика)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 30
+    },
+    {
+      "id": "23686a4b78347f",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "13.04.02",
+      "directionName": "Электроэнергетика и электротехника (Интеллектуальные системы электрооборудования и промышленной электроники)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 30
+    },
+    {
+      "id": "3dfe4952f687b2",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "13.04.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для инновационного транспорта)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0259293bc1ace2",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 3,
+      "marketingTarget": 30
+    },
+    {
+      "id": "0259293bc1ace2",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "e9836569cd398b",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.02",
+      "directionName": "Технологические машины и оборудование (Промышленный инжиниринг)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "5cbb3b06ebd15d",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.04",
+      "directionName": "Автоматизация технологических процессов и производств (Промышленная автоматизация)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 10
+    },
+    {
+      "id": "79a36a12f9e8e2",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.06",
+      "directionName": "Мехатроника и робототехника (Промышленная мехатроника)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 1,
+      "marketingTarget": 10
+    },
+    {
+      "id": "2d9c2c22ad48c5",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "16.04.03",
+      "directionName": "Холодильная, криогенная техника и системы жизнеобеспечения (Криогенные технологии индустрии водорода и систем сжиженного газа)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 5
+    },
+    {
+      "id": "0a2f28b5167ff5",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "19.04.01",
+      "directionName": "Биотехнология (Промышленная биотехнология и биоинженерия)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 5
+    },
+    {
+      "id": "e2584164541928",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "20.04.01",
+      "directionName": "Техносферная безопасность",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 10
+    },
+    {
+      "id": "4ca52b96d87f1d",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "22.04.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 1,
+      "marketingTarget": 15
+    },
+    {
+      "id": "df740ba1ce005d",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "22.04.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "e2a6e7d90515b3",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "23.04.02",
+      "directionName": "Наземные транспортно-технологические комплексы",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 8,
+      "marketingTarget": 80
+    },
+    {
+      "id": "5a4aeb2096615c",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "27.04.01",
+      "directionName": "Стандартизация и метрология (Цифровые решения в метрологии и стандартизации)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "485e94d15089a5",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 12,
+      "marketingTarget": 70
+    },
+    {
+      "id": "f7d5548d1fe127",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "27.04.04",
+      "directionName": "Управление в технических системах",
+      "facultyScopes": [
+        "Полиграфический факультет",
+        "Передовая школа инженерного дизайна"
+      ],
+      "joint": true,
+      "pfhdTarget": 5,
+      "marketingTarget": 75
+    },
+    {
+      "id": "ab364f8800bc90",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "29.04.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Полиграфические технологии производства высокотехнологичной продукции)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 5
+    },
+    {
+      "id": "fd126a36afc983",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "38.04.01",
+      "directionName": "Экономика (Экономика высокотехнологичных производств)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 75
+    },
+    {
+      "id": "b08493dc694221",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "38.04.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 75
+    },
+    {
+      "id": "8cd5978567445c",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "32e55cfd56e845",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.02",
+      "directionName": "Журналистика (Медиакоммуникации в креативных индустриях)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "81c3c07c1df4db",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.03",
+      "directionName": "Издательское дело (Современный издательский процесс:инновационной практики)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 5,
+      "marketingTarget": 25
+    },
+    {
+      "id": "bf0628ddfbb817",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 30
+    },
+    {
+      "id": "d4e39ed029a006",
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "54.04.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 2,
+      "marketingTarget": 30
+    },
+    {
+      "id": "828b34feab6286",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "01.04.02",
+      "directionName": "Прикладная математика и информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "bda9362035680c",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "08.04.01",
+      "directionName": "Строительство (Промышленное, гражданское и подземное строительство (нет лицензии)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b34efe1655bb70",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "09.04.01",
+      "directionName": "Информатика и вычислительная техника (Интеллектуальные системы)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6ec2790b34b04b",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Бизнес-инжиниринг и управление цифровыми проектами)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "518c2f603f3080",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии (Мобильные технологии; Технологии смешанной реальности)",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "babf6e7c6b0bd0",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "10.04.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b718ca682ded5d",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "13.04.01",
+      "directionName": "Теплоэнергетика и теплотехника (Распределенная тепловая энергетика)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "549dbbce792605",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "13.04.02",
+      "directionName": "Электроэнергетика и электротехника (Интеллектуальные системы электрооборудования и промышленной электроники)",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "f91b5bdee49ed2",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "13.04.03",
+      "directionName": "Энергетическое машиностроение (Проектирование и эксплуатация двигателей для инновационного транспорта)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "65d387e0451ff7",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "15.04.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "96e576b00d3a8d",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "15.04.02",
+      "directionName": "Технологические машины и оборудование (Промышленный инжиниринг)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "dd37193ec44105",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "15.04.04",
+      "directionName": "Автоматизация технологических процессов и производств (Промышленная автоматизация)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "4ba41499e1a059",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "15.04.06",
+      "directionName": "Мехатроника и робототехника (Промышленная мехатроника)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "7233ed3665dc84",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "16.04.03",
+      "directionName": "Холодильная, криогенная техника и системы жизнеобеспечения (Криогенные технологии индустрии водорода и систем сжиженного газа)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "b197b50d27dd1f",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "19.04.01",
+      "directionName": "Биотехнология (Промышленная биотехнология и биоинженерия)",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "da3f30b8ead0f4",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "20.04.01",
+      "directionName": "Техносферная безопасность",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "a77d454f638e60",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "22.04.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "e982a4a9614fec",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "22.04.02",
+      "directionName": "Металлургия (Инновации в металлургии)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6a064c4f7d3413",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "23.04.02",
+      "directionName": "Наземные транспортно-технологические комплексы",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "ec833dfdfc0d91",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "27.04.01",
+      "directionName": "Стандартизация и метрология (Цифровые решения в метрологии и стандартизации)",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "cd7d3718eaac33",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "282a6455547c95",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "27.04.04",
+      "directionName": "Управление в технических системах",
+      "facultyScopes": [
+        "Полиграфический факультет",
+        "Передовая школа инженерного дизайна"
+      ],
+      "joint": true,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "6f1976f422045b",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "29.04.03",
+      "directionName": "Технология полиграфического и упаковочного производства (Полиграфические технологии производства высокотехнологичной продукции)",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "53fe9770b65123",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "38.04.01",
+      "directionName": "Экономика (Экономика высокотехнологичных производств)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "a347013672550c",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "38.04.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "e018c66db3b6ea",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "joint": false,
+      "pfhdTarget": 10,
+      "marketingTarget": 50
+    },
+    {
+      "id": "0533ef71c91d3f",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "42.04.02",
+      "directionName": "Журналистика (Медиакоммуникации в креативных индустриях)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "0ae27c42c01dc8",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "42.04.03",
+      "directionName": "Издательское дело (Современный издательский процесс:инновационной практики)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 0,
+      "marketingTarget": 0
+    },
+    {
+      "id": "9acb19542da8a4",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 20,
+      "marketingTarget": 35
+    },
+    {
+      "id": "b135fde5f38f55",
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "54.04.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "joint": false,
+      "pfhdTarget": 20,
+      "marketingTarget": 35
+    }
+  ]
+}

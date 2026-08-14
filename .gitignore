@@ -1,0 +1,27 @@
+# Private source data must never be committed.
+*.xlsx
+*.xls
+*.csv
+private-data/
+staging/
+*.tmp
+
+# Generated and local development files.
+node_modules/
+dist/
+test-results/
+playwright-report/
+coverage/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
