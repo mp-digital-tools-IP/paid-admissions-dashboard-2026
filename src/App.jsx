@@ -5,7 +5,7 @@ import {
 } from './icons.jsx'
 import {
   ALL, FORM_ORDER, LEVEL_ORDER, canonicalFaculty, completionLabel, defaultFilters, filterPlan, filterSegments,
-  groupDirections, groupFaculty, planTotals, sumRows, uniquePeopleFor,
+  groupDirections, groupFaculty, planTotals, sumRows, tuitionForDirection, uniquePeopleFor,
 } from './dataUtils.js'
 
 const money = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 0 })
@@ -43,12 +43,12 @@ function Metric({ icon: Icon, label, value, detail, tone = 'dark', progress }) {
 }
 
 
-function FacultyTable({ facultyRows, planRows, segments }) {
+function FacultyTable({ facultyRows, planRows, segments, tuitionRows }) {
   const [open, setOpen] = useState(null)
   return (
     <div className="faculty-list" data-testid="faculty-list">
       {facultyRows.map((faculty) => {
-        const directions = groupDirections(planRows, segments, faculty.name)
+        const directions = groupDirections(planRows, segments, faculty.name).map((row) => ({ ...row, tuition: tuitionForDirection(row, tuitionRows) }))
         const isOpen = open === faculty.name
         return (
           <article className={`faculty-card ${faculty.joint ? 'faculty-card--joint' : ''}`} key={faculty.name}>
@@ -64,12 +64,12 @@ function FacultyTable({ facultyRows, planRows, segments }) {
             {isOpen && (
               <div className="table-scroll" data-testid="direction-table">
                 <table>
-                  <thead><tr><th>Направление</th><th>Стоимость семестра</th><th>ПФХД</th><th>Маркетинг</th><th>Договоры</th><th>Подписаны</th><th>Оплачены</th><th>Приоритеты 1 / 2 / другие</th><th>Россия / иностранное</th><th>Портфель</th><th>Оплата</th><th>Выполнение</th></tr></thead>
+                  <thead><tr><th>Направление</th><th>Стоимость за год</th><th>ПФХД</th><th>Маркетинг</th><th>Договоры</th><th>Подписаны</th><th>Оплачены</th><th>Приоритеты 1 / 2 / другие</th><th>Россия / иностранное</th><th>Портфель</th><th>Оплата</th><th>Выполнение</th></tr></thead>
                   <tbody>
                     {directions.map((row) => (
                       <tr key={row.key} className={row.unmatched ? 'row-warning' : ''}>
                         <td><b>{row.code} · {row.directionName}</b><small>{row.level} · {row.form}{row.unmatched ? ' · Нет плана ПФХД' : ''}</small></td>
-                        <td>{row.listPriceMin == null ? '—' : row.listPriceMin === row.listPriceMax ? formatMoney(row.listPriceMin) : `${formatMoney(row.listPriceMin)}–${formatMoney(row.listPriceMax)}`}</td>
+                        <td>{row.tuition ? formatMoney(row.tuition.annualCost) : 'Тариф не установлен'}</td>
                         <td>{count.format(row.pfhdTarget)}</td><td>{count.format(row.marketingTarget)}</td><td>{count.format(row.contracts)}</td><td>{count.format(row.signed)}</td><td>{count.format(row.paid)}</td>
                         <td>{count.format(row.priorityOne)} / {count.format(row.priorityTwo)} / {count.format(row.priorityOther)}</td>
                         <td>{count.format(row.russiaContracts)} / {count.format(row.foreignContracts)}</td><td>{formatMoney(row.portfolio)}</td><td>{formatMoney(row.reportedPayment)}</td>
@@ -88,28 +88,20 @@ function FacultyTable({ facultyRows, planRows, segments }) {
 }
 
 
-function TuitionReference({ segments }) {
-  const grouped = new Map()
-  for (const row of segments) {
-    const key = `${row.level}|${row.code}`
-    const current = grouped.get(key) || { key, level: row.level, code: row.code, directionName: row.directionName, rows: [] }
-    current.rows.push(row)
-    grouped.set(key, current)
-  }
-  const rows = [...grouped.values()].map((row) => ({
-    ...row,
-    form: FORM_ORDER.filter((form) => row.rows.some((item) => item.form === form)).join(', '),
-    ...sumRows(row.rows),
-  })).sort((a, b) => {
+function TuitionReference({ records, filters }) {
+  const rows = filterPlan(records, filters).slice().sort((a, b) => {
     const level = LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level)
-    return level || a.code.localeCompare(b.code, 'ru')
+    const form = FORM_ORDER.indexOf(a.form) - FORM_ORDER.indexOf(b.form)
+    return level || form || a.code.localeCompare(b.code, 'ru') || a.directionName.localeCompare(b.directionName, 'ru')
   })
   return (
     <details className="panel reference-panel" id="tuition">
-      <summary><span><span className="eyebrow">Справочно</span><b>Стоимость обучения</b></span><CaretDown size={20} /></summary><p className="reference-intro">Стоимость семестра из текущей выгрузки договоров. Таблица реагирует на выбранные фильтры.</p>
-      <div className="table-scroll compact-table"><table><thead><tr><th>Направление</th><th>Уровень</th><th>Форма</th><th>Стоимость семестра</th><th>Договоры с данными</th><th>Сумма без скидки</th></tr></thead><tbody>
-        {rows.map((row) => <tr key={row.key}><td><b>{row.code} · {row.directionName}</b></td><td>{row.level}</td><td>{row.form}</td><td>{row.listPriceMin == null ? '—' : row.listPriceMin === row.listPriceMax ? formatMoney(row.listPriceMin) : `${formatMoney(row.listPriceMin)}–${formatMoney(row.listPriceMax)}`}</td><td>{count.format(row.contracts)}</td><td>{formatMoney(row.listPriceTotal)}</td></tr>)}
+      <summary><span><span className="eyebrow">Справочно</span><b>Стоимость обучения</b></span><CaretDown size={20} /></summary>
+      <p className="reference-intro">Стоимость первого года: приказ — основной источник, ПФХД — второй. Если цены нет в обоих источниках, годовая сумма рассчитывается как стоимость семестра × 2.</p>
+      <div className="table-scroll compact-table"><table><thead><tr><th>Направление</th><th>Стоимость за год</th><th>Форма</th><th>Уровень</th><th>Источник</th></tr></thead><tbody>
+        {rows.map((row) => <tr key={row.id}><td><b>{row.code} · {row.directionName}</b></td><td><b>{formatMoney(row.annualCost)}</b></td><td>{row.form}</td><td>{row.level}</td><td>{row.sourceLabel}</td></tr>)}
       </tbody></table></div>
+      {!rows.length && <div className="empty">Для выбранного среза стоимость не найдена.</div>}
     </details>
   )
 }
@@ -127,7 +119,8 @@ export default function App() {
       fetch(`${base}data/plan.json`).then((response) => response.ok ? response.json() : Promise.reject(new Error('plan.json'))),
       fetch(`${base}data/current.json`).then((response) => response.ok ? response.json() : Promise.reject(new Error('current.json'))),
       fetch(`${base}data/history.json`).then((response) => response.ok ? response.json() : Promise.reject(new Error('history.json'))),
-    ]).then(([plan, current, history]) => setData({ plan, current, history })).catch(() => setError('Не удалось загрузить проверенный срез. Действующий сайт не изменён.'))
+      fetch(`${base}data/tuition.json`).then((response) => response.ok ? response.json() : Promise.reject(new Error('tuition.json'))),
+    ]).then(([plan, current, history, tuition]) => setData({ plan, current, history, tuition })).catch(() => setError('Не удалось загрузить проверенный срез. Действующий сайт не изменён.'))
   }, [])
 
   const updateFilter = (key, value) => setFilters((current) => {
@@ -138,6 +131,7 @@ export default function App() {
   })
   const filteredSegments = useMemo(() => data ? filterSegments(data.current.segments, filters) : [], [data, filters])
   const filteredPlan = useMemo(() => data ? filterPlan(data.plan.records, filters) : [], [data, filters])
+  const filteredTuition = useMemo(() => data ? filterPlan(data.tuition.records, filters) : [], [data, filters])
   const actual = useMemo(() => sumRows(filteredSegments), [filteredSegments])
   const plans = useMemo(() => planTotals(filteredPlan), [filteredPlan])
   const uniquePeople = useMemo(() => data ? uniquePeopleFor(data.current, filters) : 0, [data, filters])
@@ -203,10 +197,10 @@ export default function App() {
 
         <section className="panel" id="faculties">
           <div className="panel__heading"><div><span className="eyebrow">Оперативный срез</span><h2>{filters.faculty === ALL ? 'Факультеты и направления' : filters.faculty}</h2><p>Каждый факультет показан один раз. Уровень, форма, приоритет и гражданство меняются фильтрами выше.</p></div><span className="source-badge"><Database size={16} /> ПФХД + договоры</span></div>
-          {facultyRows.length ? <FacultyTable facultyRows={facultyRows} planRows={filteredPlan} segments={filteredSegments} /> : <div className="empty">В выбранном срезе нет договоров и плановых записей.</div>}
+          {facultyRows.length ? <FacultyTable facultyRows={facultyRows} planRows={filteredPlan} segments={filteredSegments} tuitionRows={filteredTuition} /> : <div className="empty">В выбранном срезе нет договоров и плановых записей.</div>}
         </section>
 
-        <TuitionReference segments={filteredSegments} />
+        <TuitionReference records={data.tuition.records} filters={filters} />
         <footer className="page-footer"><span>Московский Политех · платный приём 2026</span><span><ShieldCheck size={16} /> Только агрегированные данные</span></footer>
       </main>
     </div>

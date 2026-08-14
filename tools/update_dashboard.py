@@ -145,7 +145,7 @@ def normalize_level(value: Any) -> str:
 
 
 def normalize_form(value: Any) -> str:
-    text = clean_text(value).casefold().replace("ё", "е")
+    text = re.sub(r"\s*-\s*", "-", clean_text(value).casefold().replace("ё", "е"))
     if "очно-заоч" in text:
         return "Очно-заочная"
     if "заоч" in text:

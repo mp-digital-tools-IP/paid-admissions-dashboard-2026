@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ALL, JOINT_FACULTY, canonicalFaculty, completionLabel, displayFaculty, filterPlan, filterSegments, groupDirections, groupFaculty, planTotals, sumRows, uniquePeopleFor } from './dataUtils.js'
+import { ALL, JOINT_FACULTY, canonicalFaculty, completionLabel, displayFaculty, filterPlan, filterSegments, groupDirections, groupFaculty, planTotals, sumRows, tuitionForDirection, uniquePeopleFor } from './dataUtils.js'
 
 const filters = { level: ALL, form: ALL, faculty: ALL, direction: ALL, citizenship: ALL, discount: ALL, priority: ALL }
 const joint = { level: 'Магистратура', form: 'Очная', code: '01.04.01', directionName: 'Тест', facultyScopes: ['А', 'Б'], joint: true, pfhdTarget: 10, marketingTarget: 20 }
@@ -38,11 +38,19 @@ describe('dashboard aggregation', () => {
     expect(canonicalFaculty(plan.facultyScopes[0])).toBe(canonical)
     expect(groupFaculty([plan], [segment], snapshot, filters).map((row) => row.name)).toEqual([canonical])
   })
-  it('shows one direction across several forms', () => {
+  it('keeps every study form in a separate row', () => {
     const plan = { ...joint, joint: false, facultyScopes: ['А'] }
     const secondForm = { ...plan, form: 'Очно-заочная' }
     const rows = groupDirections([plan, secondForm], [], 'А')
-    expect(rows).toHaveLength(1)
-    expect(rows[0].form).toBe('Очная, Очно-заочная')
+    expect(rows).toHaveLength(2)
+    expect(rows.map((row) => row.form)).toEqual(['Очная', 'Очно-заочная'])
+  })
+  it('selects one annual tuition value for a direction and form', () => {
+    const direction = { level: 'Бакалавриат и специалитет', form: 'Очная', code: '54.03.01', directionName: 'Графический дизайн и мультимедиа' }
+    const tuition = [
+      { ...direction, directionName: 'Транспортный и промышленный дизайн', annualCost: 785000 },
+      { ...direction, annualCost: 816000 },
+    ]
+    expect(tuitionForDirection(direction, tuition).annualCost).toBe(816000)
   })
 })

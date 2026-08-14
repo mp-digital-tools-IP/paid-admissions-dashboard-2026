@@ -7,6 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 
+from build_tuition_reference import build_reference  # noqa: E402
+
 from update_dashboard import (  # noqa: E402
     build_history, citizenship_group, faculty_scopes, normalize_code, normalize_form,
     normalize_level, parse_contracts, parse_plan, parse_snapshot_at,
@@ -19,6 +21,7 @@ class ProcessorUnitTests(unittest.TestCase):
         self.assertEqual(normalize_code("09.03.01"), "09.03.01")
         self.assertEqual(normalize_level("Специалитет"), "Бакалавриат и специалитет")
         self.assertEqual(normalize_form("Очно-заочная форма"), "Очно-заочная")
+        self.assertEqual(normalize_form("очно- заочная"), "Очно-заочная")
         self.assertEqual(citizenship_group("РОССИЯ"), "Россия")
         self.assertEqual(citizenship_group("РЕСПУБЛИКА БЕЛАРУСЬ"), "Иностранное")
 
@@ -43,7 +46,16 @@ class BaselineIntegrationTests(unittest.TestCase):
     def setUpClass(cls):
         cls.plan = parse_plan(ROOT / "ПФХД2 (13.08.2026).xlsx")
         cls.snapshot = parse_contracts(ROOT / "Выгрузка договор от 13.08.2026.xlsx", cls.plan, datetime.fromisoformat("2026-08-13T22:57:54+03:00"))
+        cls.tuition = build_reference(ROOT / "Стоимость обучения.pdf", ROOT / "ПФХД2 (13.08.2026).xlsx", ROOT / "Выгрузка договор от 13.08.2026.xlsx")
 
+    def test_tuition_reference_uses_order_then_pfhd(self):
+        self.assertEqual(self.tuition["coverage"]["orderEntries"], 124)
+        self.assertEqual(self.tuition["coverage"]["fromOrder"], 124)
+        self.assertEqual(self.tuition["coverage"]["fromPfhd"], 2)
+        self.assertEqual(self.tuition["coverage"]["records"], 126)
+        self.assertEqual(self.tuition["coverage"]["missingActivePlanRows"], 7)
+        self.assertTrue(all(item["annualCost"] > 0 for item in self.tuition["records"]))
+        self.assertTrue(all(item["form"] in ("Очная", "Очно-заочная", "Заочная") for item in self.tuition["records"]))
     def test_plan_control_totals(self):
         self.assertEqual(self.plan["totals"], {"pfhdTarget": 1215, "marketingTarget": 5068})
 

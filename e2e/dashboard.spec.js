@@ -68,3 +68,13 @@ test('mobile menu opens and closes', async ({ page }) => {
   await page.locator('.mobile-close').click()
   await expect(burger).toHaveAttribute('aria-expanded', 'false')
 })
+test('tuition shows one annual amount per separate study form', async ({ page }) => {
+  await page.goto('/')
+  await page.locator('#tuition summary').click()
+  await expect(page.locator('#tuition th', { hasText: 'Стоимость за год' })).toBeVisible()
+  await expect(page.locator('#tuition tbody tr')).toHaveCount(126)
+  const prices = await page.locator('#tuition tbody tr td:nth-child(2)').allTextContents()
+  expect(prices.every((value) => /^\d[\d\s]* ₽$/.test(value))).toBe(true)
+  const forms = await page.locator('#tuition tbody tr td:nth-child(3)').allTextContents()
+  expect(forms.every((value) => ['Очная', 'Очно-заочная', 'Заочная'].includes(value))).toBe(true)
+})

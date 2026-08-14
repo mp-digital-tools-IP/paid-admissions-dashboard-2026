@@ -1,0 +1,1852 @@
+{
+  "schemaVersion": 1,
+  "basis": "Стоимость обучения за первый год",
+  "method": "Приказ → ПФХД → стоимость семестра × 2",
+  "order": {
+    "number": "392-ОД",
+    "date": "2026-04-08",
+    "academicYear": "2026/2027"
+  },
+  "coverage": {
+    "records": 126,
+    "orderEntries": 124,
+    "fromOrder": 124,
+    "fromPfhd": 2,
+    "fromSemesterCost": 0,
+    "missingActivePlanRows": 7
+  },
+  "missing": [
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "38.04.01",
+      "directionName": "Экономика (Экономика высокотехнологичных производств)"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "20.04.01",
+      "directionName": "Техносферная безопасность"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "42.04.02",
+      "directionName": "Журналистика (Медиакоммуникации в креативных индустриях)"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.4.7",
+      "directionName": "Высокомолекулярные соединения"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.6",
+      "directionName": "Теоретическая и прикладная теплотехника"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.11",
+      "directionName": "Технология и переработка синтетических и природных полимеров и композитов"
+    }
+  ],
+  "records": [
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "01.03.02",
+      "directionName": "Прикладная математика и информатика",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "annualCost": 397000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2q9qeqaq1q4qfq5q2q0qdq1q5q4"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "08.03.01",
+      "directionName": "Строительство",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5q4qcqaqbq5q9q1q8q7qaq8qcq1"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 512000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q7q2qbqfqbq4qcq5qbq5qbqbq9qc"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет машиностроения"
+      ],
+      "annualCost": 465000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qaq4qcq5q0q9qdqbq1q6qaq4qbqe"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 465000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qeq7q5q5qaq1q3q4q9q3qdq4qdq9"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "10.03.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 465000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbqbq1qbq8qbq5qcq6q1q0q9q1qe"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "10.05.03",
+      "directionName": "Информационная безопасность автоматизированных систем",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 464000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfq7qbqeqdqfqbq6qaqaq9qcq9qc"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "11.03.01",
+      "directionName": "Радиотехника",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q5qaq9q9q2q9qcqdqfqbqcq3q3"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.01",
+      "directionName": "Теплоэнергетика и теплотехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qcq8q5qbqdq4qaqaq5qfq1qeq9"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3q4qbq9q6qfq9qbq9q9q5qaq6q5"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "13.03.03",
+      "directionName": "Энергетическое машиностроение",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2q7q4qaq7q0qbq2q6qeqeq6qeqf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeqaqaq2qbqbqcqdq2qeqbq6q8qc"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.02",
+      "directionName": "Технологические машины и оборудование",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcqeq5q1qfq2qeq9q9qfq8q9q9qa"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.03",
+      "directionName": "Прикладная механика",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfqfq8q2qbq7q4qdqaqaq2qfq1qe"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.04",
+      "directionName": "Автоматизация технологических процессов и производств",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q5qfqdq2qeqeq9qeqcqaqbqaq0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.05",
+      "directionName": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 355300,
+      "sourceKind": "pfhd",
+      "sourceLabel": "План ПФХД",
+      "joint": true,
+      "id": "q5q6q6qcq6q2q2q4q0qaqfqcq9qb"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "15.03.06",
+      "directionName": "Мехатроника и робототехника",
+      "facultyScopes": [
+        "ПИШ ТЛ FDR"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfqdq2qfq1q9qeqfq1q4q3q7qbq2"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "19.03.01",
+      "directionName": "Биотехнология",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 445000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbq9qfqaq7qfqcq8q9qdqfqbqeq0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "20.03.01",
+      "directionName": "Техносферная безопасность",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1qeq6qdq4q8q0q7q9q5qeq2q8q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "22.03.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q7q4q7qcqfqaq3q3q4qfq2qaq1qb"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.03.02",
+      "directionName": "Наземные транспортно-технологические комплексы",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qaqeq1q3qdq7q7qfq9q9qbq8q4"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.03.03",
+      "directionName": "Эксплуатация транспортно-технологических машин и комплексов",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1q9q8q0qcq4q5qdq6q9qbq4qcq0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства (Перспективные автомобили, Автомобили и автомобильный сервис, Компьютерный инжиниринг в автомобилестроении)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 445000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q7qbq5q4qcq4qaq0q7qfqaq2q9"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства (Спортивные транспортные средства)",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 464000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2q1q3qeq5q3qeqaqfq1q3qeq8q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfqfq6q7q4q2qaq0q3qeqaq7q6qe"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.04",
+      "directionName": "Управление в технических системах",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4q2q4qcq5q2q4q6qeqdqaq7q3q7"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "27.03.05",
+      "directionName": "Инноватика",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q0q1qdq4qdqdqaq6q8q2q0q8q4q2"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "29.03.03",
+      "directionName": "Технология полиграфического и упаковочного производства",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3qaqfq6q4q1q0q2q7qeq1qbq0qf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "29.03.04",
+      "directionName": "Технология художественной обработки материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "annualCost": 427000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qfq6q3q0qeq6qfq2q9qdq6qaq4q6"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.01",
+      "directionName": "Экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 415000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q7qbqfq8q0q5q0qcq2q5q4qfqfq2"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.01",
+      "directionName": "Экономика (study in English)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 450000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q8q7qbq0q7qeqbq1q5q6qaq8q0qc"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 415000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeqdqbq9qaq0q7qaqdq6q2qaq9q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "38.03.03",
+      "directionName": "Управление персоналом (Экономико-правовое обеспечение трудовых процессов)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 345100,
+      "sourceKind": "pfhd",
+      "sourceLabel": "План ПФХД",
+      "joint": false,
+      "id": "q4q3qfqeqbq6q7q0q6qeqdq2q6q9"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 415000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qfq6q7q1q7q1qaq6q6qdqdq2q3q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.02",
+      "directionName": "Журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 415000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5q1q0qfq0qbq1qaqbq5q2q0q6q8"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 415000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3qcq7q2qfq4qaq7q1qbq3q9q6q7"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.03.01",
+      "directionName": "Графический дизайн и мультимедиа",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 816000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qeqbq8q9q8q5qcqbqeqcq0qaq5qe"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.03.01",
+      "directionName": "Транспортный и промышленный дизайн",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 785000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q7q9q4qbq1qeqbq8q0qaq9q6qaq6"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.03.01",
+      "directionName": "Цифровой дизайн (ДОТ)",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 816000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q3q8q1q5qdq8q9qbqaq2q7qbq2q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очная",
+      "code": "54.05.03",
+      "directionName": "Графика",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 816000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0q9q1q7q0q3qdq0q4qcqaq5q6qb"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "08.03.01",
+      "directionName": "Строительство",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 162000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3qbq0qdqcq4q3q3qeqcq4q9qeq0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 162000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q0q1q5q2q7qaqcq9q0q7q6qfq4q3"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "15.03.05",
+      "directionName": "Конструкторско-технологическое обеспечение машиностроительных производств",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q3qaqcq6qfq6q0q1q8q1qfqaqbq8"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "22.03.02",
+      "directionName": "Металлургия",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcqcq6q0q4q8q9q7q1qfqaqeqdq8"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.01",
+      "directionName": "Экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 177000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qeq7q8qdq6qbqbqaqfqeqdq5q6"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 177000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q7qbqaqbq3qfq3q4qbqbqcqfq4"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.02",
+      "directionName": "Менеджмент (study in English)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 200000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2qfqbq1q5q5qbqcq8q0qcq1qaq8"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "38.03.03",
+      "directionName": "Управление персоналом",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 177000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3qcq6qeq4qcqdq6q6qeqdq1qfqf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 197000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q2q5q6q2q4q6qdq1qeqcq8q1qdqd"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 197000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q4qcqcq7qaq8q7qaq3q1q4qcqb"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Очно-заочная",
+      "code": "54.03.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Транспортный факультет",
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 281000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q7qcq4q3q3qcq0q8q2q1qfq5q6qf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 183000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q2q2q3qcq9qbqbq7q5q7q5qbq5"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет машиностроения"
+      ],
+      "annualCost": 183000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q8q1q4qaq7q8q6q6qbq1q3qfq3q2"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "09.03.03",
+      "directionName": "Прикладная информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 183000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q1qdqaq5qaqbq1q1q8q8qcqaqaq4"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "13.03.01",
+      "directionName": "Теплоэнергетика и теплотехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4qcq8qcqeq8qeqcqdq6qbq0q8qd"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "13.03.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0qdqaqfq6qfq7q2q0qbq5q9qeqf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "15.03.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbqfqeq4qbqfq4qbqeq3q3q4qeq5"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "22.03.02",
+      "directionName": "Металлургия",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qdqaq1q1qfqdqaqcq8q4qdq0q0"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "23.03.03",
+      "directionName": "Эксплуатация транспортно-технологических машин и комплексов",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 162000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeqcqeq2q0qbqfq0q2q4qdq2qdqf"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "23.05.01",
+      "directionName": "Наземные транспортно-технологические средства",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 162000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeq4q9q3qcqcq5qcq4q9q8q3qeq2"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "27.03.05",
+      "directionName": "Инноватика",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 162000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qaq8q7qbq5q0qbq8qbq5qdqfq2q6"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "42.03.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления",
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 197000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qcq6q6qdq9q6qfq4q6qbq7qdq2q7"
+    },
+    {
+      "level": "Бакалавриат и специалитет",
+      "form": "Заочная",
+      "code": "42.03.03",
+      "directionName": "Издательское дело",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 197000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5q8q6q2qbqeq1qfq1qdq0qeq4q5"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "01.04.02",
+      "directionName": "Прикладная математика и информатика",
+      "facultyScopes": [
+        "Факультет информационных технологий",
+        "Передовая инженерная школа технологического лидерства «FDR»"
+      ],
+      "annualCost": 428000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q3q2qbq7q9q4q7qaqcqeqeq2qbqf"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "09.04.01",
+      "directionName": "Информатика и вычислительная техника",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 477000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0q4qdqbq6qbqbq0q1qcq3q6q6qa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "09.04.02",
+      "directionName": "Информационные системы и технологии",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 477000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcqbqbqbq4q8q0qbqeq2q6qaqaqd"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "10.04.01",
+      "directionName": "Информационная безопасность",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 477000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfq8q1q0qfqfq7q1qaq6q7q6qfq5"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "13.04.01",
+      "directionName": "Теплоэнергетика и теплотехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q8qdq2q1q9qfqdq1qaq4qaq2qa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "13.04.02",
+      "directionName": "Электроэнергетика и электротехника",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0q2q4qeq0qcq2qdq4q6qeq0q9qa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.01",
+      "directionName": "Машиностроение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q2qcq9q2q4qdq6q0q5q2q6qdqa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.02",
+      "directionName": "Технологические машины и оборудование",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии",
+        "Полиграфический факультет"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qeqaq7qcq2q8qcqeq9q1q6qeq3q5"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.04",
+      "directionName": "Автоматизация технологических процессов и производств",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q7qcq6q2q3qcq1qcq2qfqfq6qeq1"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "15.04.06",
+      "directionName": "Мехатроника и робототехника",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q8qeq6qeq0q4qfqcq8qaqdq0qbq1"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "16.04.03",
+      "directionName": "Холодильная, криогенная техника и системы жизнеобеспечения",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 518000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q4qcq2q2q9q3q2qaq6q8qfqcq8"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "19.04.01",
+      "directionName": "Биотехнология",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbq8q5q2qaqcq1q0qaq5qbq1q8qc"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "20.04.01",
+      "directionName": "Техносферная безопасность",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qaq8qeq6q8qcqfq6q4qcq8q7q0qf"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "22.04.01",
+      "directionName": "Материаловедение и технологии материалов",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Полиграфический факультет"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q1q3q9qdq8qaqaq3qbqfq7q3qcq0"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "23.04.02",
+      "directionName": "Наземные транспортно-технологические комплексы",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2q2q3q3qcqfq2q6qcqdqeq8q8qd"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 477000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qaq2q7q6qaqcq9qaqbqaq4q1q9"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "27.04.04",
+      "directionName": "Управление в технических системах",
+      "facultyScopes": [
+        "Полиграфический факультет",
+        "Передовая школа инженерного дизайна"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q7qaqdq5q5q1q5q1qfqdq4qfqdq7"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "29.04.03",
+      "directionName": "Технология полиграфического и упаковочного производства",
+      "facultyScopes": [
+        "Полиграфический факультет"
+      ],
+      "annualCost": 457000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5q0q8q1qdqcq5q0q0q9q5q8q4q2"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "38.04.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 438000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1q6qdqeqaq3q4q6q2qfq7q9q8qa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 438000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbq0qbq1q4q5qfqaq9q6q0q7qeq3"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью (study in English)",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 480000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2qfq3qcq8q2qcqeq7q2q1q2q2q8"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.02",
+      "directionName": "Журналистика (study in English)",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 480000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcq4qaq6q8q0q1q1q3qcq8q5qcqc"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "42.04.03",
+      "directionName": "Издательское дело",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 438000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeqcqeqeq7qfq4qfq7q8q7qcq9qf"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очная",
+      "code": "54.04.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 850000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q8q5qcqbq8q3qeq0q7q9q1q5q0q1"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "38.04.02",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 178000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qdq1qfq2qfqeq8q4qaq9qcq3q3q7"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 178000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfq4q4q5q3q8q3q8q5q1q2q7qaqf"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Очно-заочная",
+      "code": "54.04.01",
+      "directionName": "Дизайн",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 305000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4q1qbq1q5q2qaq3q8qaqcq6qdqa"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "22.04.02",
+      "directionName": "Металлургия",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0q7qbqcqeq7qcqaq2qcq6q7q4qe"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "27.04.01",
+      "directionName": "Стандартизация и метрология",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6qaqaqbq5qaqcqeq9q6qaq5q5q7"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "27.04.02",
+      "directionName": "Управление качеством",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 155000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qdqcq9q7qeqbqdq0q2qbq2q8q9q4"
+    },
+    {
+      "level": "Магистратура",
+      "form": "Заочная",
+      "code": "42.04.01",
+      "directionName": "Реклама и связи с общественностью",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 207000,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1q3q6q8q7q7q0q0qbq0q6q7qfqd"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.1.7",
+      "directionName": "Теоретическая механика, динамика машин",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 473600,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcq1qeq6q7q5q4q7qdq6q0q9q9q2"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.1.8",
+      "directionName": "Механика деформируемого твердого тела",
+      "facultyScopes": [
+        "Факультет базовых компетенций"
+      ],
+      "annualCost": 495400,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qeqfq3qcqaqeq1qcqdqdq8qaq4q1"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.2.1",
+      "directionName": "Искусственный интеллект и машинное обучение",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qaqaqeq9q3qcq4q5q8q7q9q9q8q0"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.3.11",
+      "directionName": "Физика полупроводников",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4qeqbq1qbq6q5q8q8qbq5qfqeq3"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "1.5.6",
+      "directionName": "Биотехнология",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6qaq1q0q6qeq7qeq5q5qdq4q2qf"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.1.1",
+      "directionName": "Строительные конструкции, здания и сооружения",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4q5qeq6q3q0q6qaq4q5qdqdq8q0"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.1.5",
+      "directionName": "Строительные материалы и изделия",
+      "facultyScopes": [
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q8q8q3qbq0qeq0qfq9q3q0qeq2q0"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.1",
+      "directionName": "Системный анализ, управление и обработка информации, статистика",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q0q1q1q8q1q4qaq3q9q1qcq1q6q6"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.3",
+      "directionName": "Автоматизация и управление технологическими процессами и производствами",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1qfqdq8qcqaqeq0q6qaqcqfqaq9"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.3.8",
+      "directionName": "Информатика и информационные процессы",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qdq8q5qbq5qcq1q7q7q6q5q9qdq9"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.2",
+      "directionName": "Электротехнические комплексы и системы",
+      "facultyScopes": [
+        "Факультет машиностроения",
+        "Факультет урбанистики и городского хозяйства"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "qbqcq6qeq4q8qeqfqaqcq0qdq1q6"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.7",
+      "directionName": "Турбомашины и поршневые двигатели",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qaq9q1q7q2q7q9q9q5q9q4qeq2qe"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.4.8",
+      "directionName": "Машины и аппараты, процессы холодильной и криогенной техники",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 495400,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q4q0q9q7q4q0qaq8qcqdqfq5q6"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.11",
+      "directionName": "Наземные транспортно-технологические средства и комплексы",
+      "facultyScopes": [
+        "Передовая инженерная школа технологического лидерства «FDR»",
+        "Транспортный факультет"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": true,
+      "id": "q6qcq7q7q0q4q9qdqcqcq8qcq8q4"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.21",
+      "directionName": "Машины, агрегаты и технологические процессы",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbq8q6q7q5q3q7q3q1qcqbq5qbq2"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.22",
+      "directionName": "Управление качеством продукции. Стандартизация. Организация производства",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2q8q6qcqcq3qcq5q2qdqfq1q1q2"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.5",
+      "directionName": "Технология и оборудование механической и физико-технической обработки",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qaqdq0q0q3q5q6q4q6q5qcq4qeqb"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.6",
+      "directionName": "Технология машиностроения",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q6q7q3qdq7q0q8q3qbq3q2q6q7qa"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.7",
+      "directionName": "Технологии и машины обработки давлением",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3qcq1q4q3q9q5qdq4qeq5qcq7q2"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.5.8",
+      "directionName": "Сварка, родственные процессы и технологии",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5qdq6qeqdq6q4q1qbq3q9q0qfq3"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.13",
+      "directionName": "Процессы и аппараты химических технологий",
+      "facultyScopes": [
+        "Факультет химической технологии и биотехнологии"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q7q1qdqeq4qdq2qeqbqcq1q9q8qd"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.17",
+      "directionName": "Материаловедение",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q9q0q2qeq7qaq7q4q5qeq8q7q1q6"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.3",
+      "directionName": "Литейное производство",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qfqdqcq9q8q2qcqcqfqfqfq9q9qe"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.6.4",
+      "directionName": "Обработка металлов давлением",
+      "facultyScopes": [
+        "Факультет машиностроения"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q5q7qaq5q5qfq6q5q5q9q2qcq1q6"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "2.9.5",
+      "directionName": "Эксплуатация автомобильного транспорта",
+      "facultyScopes": [
+        "Транспортный факультет"
+      ],
+      "annualCost": 478500,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q4qdq1qdq1q3q0qbq1q8q1q8q8q7"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.10.3",
+      "directionName": "Виды искусства (Изобразительное и декоративно-прикладное искусство и архитектура)",
+      "facultyScopes": [
+        "Институт графики и искусства книги имени В. А. Фаворского"
+      ],
+      "annualCost": 473600,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q3q8q3qbq9qcq6qcq0q8q4q6q6q7"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.10.4",
+      "directionName": "Библиотековедение, библиографоведение и книговедение",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 473600,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qdqcq7q4q7q1q9qaq7q7q3q0q5q7"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.12.4",
+      "directionName": "Когнитивное моделирование",
+      "facultyScopes": [
+        "Факультет информационных технологий"
+      ],
+      "annualCost": 473600,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q7q1qbqcq2q3q3qbq6q1q2qcqfq3"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.2.3",
+      "directionName": "Региональная и отраслевая экономика",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 482800,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q1q1qeqbq3q0q6qbq6qfqfqbq5q4"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.2.6",
+      "directionName": "Менеджмент",
+      "facultyScopes": [
+        "Факультет экономики и управления"
+      ],
+      "annualCost": 482800,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qcq0q3qcq9q6q3qaq5q7q4qeq7q5"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.9.5",
+      "directionName": "Русский язык. Языки народов России",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 473600,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "q2qaqcq3q1q1qfqfq3q8q5q3qaq8"
+    },
+    {
+      "level": "Аспирантура",
+      "form": "Очная",
+      "code": "5.9.9",
+      "directionName": "Медиакоммуникация и журналистика",
+      "facultyScopes": [
+        "Институт издательского дела и журналистики"
+      ],
+      "annualCost": 482800,
+      "sourceKind": "order",
+      "sourceLabel": "Приказ № 392-ОД от 08.04.2026",
+      "joint": false,
+      "id": "qbqaq4qdq7q2q9qaq5q3qaq9q0qa"
+    }
+  ]
+}

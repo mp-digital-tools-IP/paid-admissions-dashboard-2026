@@ -133,17 +133,16 @@ export function groupFaculty(planRows, segments, snapshot, filters) {
 
 export function groupDirections(planRows, segments, facultyName) {
   const belongs = (row) => displayFaculty(row) === facultyName
-  const keyOf = (row) => `${row.level}|${row.code}`
+  const keyOf = (row) => `${row.level}|${row.form}|${row.code}`
   const keys = new Set([...planRows.filter(belongs).map(keyOf), ...segments.filter(belongs).map(keyOf)])
   return [...keys]
     .map((key) => {
       const plans = planRows.filter((row) => belongs(row) && keyOf(row) === key)
       const actuals = segments.filter((row) => belongs(row) && keyOf(row) === key)
-      const [level, code] = key.split('|')
+      const [level, form, code] = key.split('|')
       const directionName = plans[0]?.directionName || actuals[0]?.directionName || 'Без названия'
-      const forms = FORM_ORDER.filter((form) => [...plans, ...actuals].some((row) => row.form === form))
       return {
-        key, level, form: forms.join(', '), code, directionName,
+        key, level, form, code, directionName,
         ...planTotals(plans), ...sumRows(actuals),
         russiaContracts: sumRows(actuals.filter((row) => row.citizenship === 'Россия')).contracts,
         foreignContracts: sumRows(actuals.filter((row) => row.citizenship === 'Иностранное')).contracts,
@@ -156,6 +155,8 @@ export function groupDirections(planRows, segments, facultyName) {
     .sort((a, b) => {
       const level = LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level)
       if (level) return level
+      const form = FORM_ORDER.indexOf(a.form) - FORM_ORDER.indexOf(b.form)
+      if (form) return form
       return `${a.code}${a.directionName}`.localeCompare(`${b.code}${b.directionName}`, 'ru')
     })
 }
@@ -176,4 +177,22 @@ export function scopeGroups(planRows, segments) {
 export function completionLabel(value, plan) {
   if (!plan) return 'Нет плана'
   return `${Math.round((value / plan) * 100)}%`
+}
+
+function comparableName(value) {
+  return String(value || '').toLowerCase().replace(/ё/g, 'е').replace(/[^a-zа-я0-9]+/g, ' ').trim()
+}
+
+export function tuitionForDirection(direction, tuitionRows) {
+  const candidates = tuitionRows.filter((row) =>
+    row.level === direction.level && row.form === direction.form && row.code === direction.code,
+  )
+  if (!candidates.length) return null
+  const targetTokens = new Set(comparableName(direction.directionName).split(' ').filter((token) => token.length > 3))
+  const ranked = candidates.map((row) => {
+    const tokens = comparableName(row.directionName).split(' ').filter((token) => token.length > 3)
+    const overlap = tokens.reduce((total, token) => total + Number(targetTokens.has(token)), 0)
+    return { row, overlap }
+  }).sort((a, b) => b.overlap - a.overlap || a.row.directionName.localeCompare(b.row.directionName, 'ru'))
+  return ranked[0].row
 }
