@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build privacy-safe aggregates for the paid admissions dashboard."""
+"""Locally de-identify contract exports into privacy-safe dashboard aggregates."""
 
 from __future__ import annotations
 
@@ -31,6 +31,7 @@ FORMS = ("Очная", "Очно-заочная", "Заочная")
 LEVELS = ("Бакалавриат и специалитет", "Магистратура", "Аспирантура")
 MOSCOW_TZ = ZoneInfo("Europe/Moscow")
 CODE_RE = re.compile(r"(?<!\d)(\d{1,2}\.\d{1,2}\.\d{1,2})\.?")
+SPECIALIZATION_SUFFIX_RE = re.compile(r"^\d{1,2}$")
 CUBE_ALL = "*"
 CUBE_SEPARATOR = "\x1f"
 
@@ -51,6 +52,7 @@ REQUIRED_CONTRACT_COLUMNS = {
     "Сумма заключенных договоров по 1 семестру",
     "Сумма оплаты",
 }
+OPTIONAL_MATCH_COLUMNS = {"Профиль", "Код специализации"}
 
 FACULTY_ALIASES = {
     "ФИТ": "Факультет информационных технологий",
@@ -108,6 +110,25 @@ def normalize_code(value: Any) -> str:
     return match.group(1) if match else ""
 
 
+def specialization_code(base_code: Any, suffix: Any) -> str:
+    base = normalize_code(base_code)
+    tail = clean_text(suffix)
+    if not base or not SPECIALIZATION_SUFFIX_RE.fullmatch(tail):
+        return ""
+    return f"{base}.{tail.zfill(2)}"
+
+
+def profile_key(value: Any) -> str:
+    text = clean_text(value).casefold().replace("ё", "е").replace("…", "...")
+    text = re.sub(r"^\d{1,2}\.\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\s*", "", text)
+    return re.sub(r"[^0-9a-zа-я]+", " ", text).strip()
+
+
+def profile_keys(value: Any) -> set[str]:
+    raw = clean_text(value)
+    return {profile_key(part) for part in (raw, *re.split(r";|\n", raw)) if profile_key(part)}
+
+
 def number(value: Any, *, field: str, row: int, allow_blank: bool = True) -> Decimal:
     if value is None or clean_text(value) == "":
         if allow_blank:
@@ -160,6 +181,21 @@ def citizenship_group(value: Any) -> str:
     return "Россия" if text in {"россия", "российская федерация", "рф"} or "россия" in text else "Иностранное"
 
 
+def faculty_key(value: Any) -> str:
+    return re.sub(r"[^0-9a-zа-я]", "", clean_text(value).casefold().replace("ё", "е"))
+
+
+def canonical_faculty(value: Any) -> str:
+    raw = clean_text(value)
+    abbreviation = re.sub(r"[^А-ЯA-Z]", "", raw.upper().replace("Ё", "Е"))
+    mapped = FACULTY_ALIASES.get(abbreviation, raw)
+    key = faculty_key(mapped)
+    for canonical in set(FACULTY_ALIASES.values()):
+        if faculty_key(canonical) == key:
+            return canonical
+    return mapped
+
+
 def faculty_scopes(value: Any) -> list[str]:
     raw = clean_text(value)
     if not raw:
@@ -167,8 +203,7 @@ def faculty_scopes(value: Any) -> list[str]:
     raw = re.sub(r"\([^)]*\)", "", raw).replace("/школа", "+школа").replace("/Школа", "+школа")
     result: list[str] = []
     for part in [clean_text(item) for item in raw.split("+") if clean_text(item)] or [raw]:
-        key = re.sub(r"[^А-ЯA-Z]", "", part.upper().replace("Ё", "Е"))
-        mapped = FACULTY_ALIASES.get(key, part)
+        mapped = canonical_faculty(part)
         if mapped not in result:
             result.append(mapped)
     return result or ["Не указано"]
@@ -210,6 +245,8 @@ def parse_plan(path: Path) -> dict[str, Any]:
         raise DataValidationError(f"В плане отсутствуют листы: {', '.join(missing)}")
     records: list[dict[str, Any]] = []
     seen: set[tuple[Any, ...]] = set()
+    profile_records: list[dict[str, Any]] = []
+    profile_seen: set[tuple[Any, ...]] = set()
     for spec in PLAN_SHEETS:
         sheet = workbook[spec.name]
         _validate_plan_sheet(sheet, spec)
@@ -219,6 +256,22 @@ def parse_plan(path: Path) -> dict[str, Any]:
                 current_faculty = clean_text(sheet.cell(row, spec.faculty_col).value)
             name_cell = clean_text(sheet.cell(row, spec.name_col).value)
             raw_code = clean_text(sheet.cell(row, spec.code_col).value) if spec.code_col else name_cell
+            profile_match = re.fullmatch(r"(\d{2}\.\d{2}\.\d{2})\.(\d{2})\.?", raw_code) if spec.code_col else None
+            if profile_match:
+                base_code, suffix = profile_match.groups()
+                profile_name = re.sub(r"^\s*\d{1,2}\.\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\.?\s*", "", name_cell).strip() or name_cell
+                scopes = faculty_scopes(current_faculty)
+                for form, _, _ in spec.forms:
+                    signature = (spec.level, form, f"{base_code}.{suffix}", tuple(scopes), tuple(sorted(profile_keys(profile_name))))
+                    if signature in profile_seen:
+                        continue
+                    profile_seen.add(signature)
+                    profile_records.append({
+                        "level": spec.level, "form": form, "baseCode": base_code,
+                        "specializationCode": f"{base_code}.{suffix}", "profileKeys": sorted(profile_keys(profile_name)),
+                        "facultyScopes": scopes,
+                    })
+                continue
             if spec.code_col and not re.fullmatch(r"\d{2}\.\d{2}\.\d{2}\.?", raw_code):
                 continue
             code = normalize_code(raw_code)
@@ -276,6 +329,7 @@ def parse_plan(path: Path) -> dict[str, Any]:
             "status": "Детальные строки являются источником плана; групповые итоги показаны как контроль качества",
         },
         "records": records,
+        "profileRecords": profile_records,
     }
 
 
@@ -287,6 +341,74 @@ def _headers(sheet) -> dict[str, int]:
     if missing:
         raise DataValidationError(f"В выгрузке отсутствуют обязательные колонки: {', '.join(missing)}")
     return {name: index for index, name in enumerate(values) if name}
+
+
+def _plan_indexes(plan: dict[str, Any]) -> dict[str, Any]:
+    by_base: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    levels_by_form_code: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for record in plan["records"]:
+        key = (record["level"], record["form"], record["code"])
+        by_base[key].append(record)
+        levels_by_form_code[(record["form"], record["code"])].add(record["level"])
+    by_specialization: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    by_profile: dict[tuple[str, str, str, str], list[dict[str, Any]]] = defaultdict(list)
+    for record in plan.get("profileRecords", []):
+        by_specialization[(record["level"], record["form"], record["specializationCode"])].append(record)
+        for key in record["profileKeys"]:
+            by_profile[(record["level"], record["form"], record["baseCode"], key)].append(record)
+    return {
+        "byBase": by_base, "levelsByFormCode": levels_by_form_code,
+        "bySpecialization": by_specialization, "byProfile": by_profile,
+    }
+
+
+def _scopes_overlap(left: Iterable[str], right: Iterable[str]) -> bool:
+    return bool(set(left) & set(right))
+
+
+def _resolve_plan_record(
+    indexes: dict[str, Any], level: str, form: str, code: str,
+    specialization: str, profile: str, source_scopes: tuple[str, ...], row: int,
+) -> tuple[str, dict[str, Any], str, bool]:
+    inferred_level = False
+    if not level:
+        levels = indexes["levelsByFormCode"].get((form, code), set())
+        if len(levels) == 1:
+            level = next(iter(levels))
+            inferred_level = True
+        else:
+            raise DataValidationError(f"Строка {row}: не удалось однозначно определить уровень подготовки")
+    base_candidates = indexes["byBase"].get((level, form, code), [])
+    if not base_candidates:
+        raise DataValidationError(f"Строка {row}: направление {code or 'не указано'} не найдено в плане ПФХД")
+
+    details: list[dict[str, Any]] = []
+    mode = "baseCode"
+    if specialization:
+        details = indexes["bySpecialization"].get((level, form, specialization), [])
+        if details:
+            mode = "specializationCode"
+    if not details and profile:
+        details = indexes["byProfile"].get((level, form, code, profile), [])
+        if details:
+            mode = "profile"
+
+    if details:
+        profile_candidates = [
+            candidate for candidate in base_candidates
+            if any(_scopes_overlap(candidate["facultyScopes"], detail["facultyScopes"]) for detail in details)
+        ]
+        if len(profile_candidates) == 1:
+            return level, profile_candidates[0], mode, inferred_level
+    if len(base_candidates) == 1:
+        return level, base_candidates[0], mode, inferred_level
+    faculty_candidates = [
+        candidate for candidate in base_candidates
+        if _scopes_overlap(candidate["facultyScopes"], source_scopes)
+    ]
+    if len(faculty_candidates) == 1:
+        return level, faculty_candidates[0], "faculty", inferred_level
+    raise DataValidationError(f"Строка {row}: направление {code} неоднозначно между факультетами")
 
 
 def _empty_metrics() -> dict[str, Any]:
@@ -398,13 +520,15 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
         raise DataValidationError("В выгрузке отсутствует лист «Лист_1»")
     sheet = workbook["Лист_1"]
     headers = _headers(sheet)
-    plan_keys = {(item["level"], item["form"], item["code"]) for item in plan["records"]}
+    indexes = _plan_indexes(plan)
     rows: list[dict[str, Any]] = []
+    match_modes: dict[str, int] = defaultdict(int)
+    inferred_levels = 0
     summary_rows = 0
     source_total = Decimal(0)
     invalid_amounts = 0
     for row_number, values in enumerate(sheet.iter_rows(min_row=7, values_only=True), start=7):
-        get = lambda name: values[headers[name]] if headers[name] < len(values) else None
+        get = lambda name: values[headers[name]] if name in headers and headers[name] < len(values) else None
         contract = clean_text(get("Номер договора"))
         payment = number(get("Сумма оплаты"), field="Сумма оплаты", row=row_number)
         if not contract:
@@ -420,8 +544,15 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
         level = normalize_level(get("Конкурсная группа.Уровень подготовки"))
         form = normalize_form(get("Форма обучения"))
         code = normalize_code(get("Код специальности"))
+        specialization = specialization_code(get("Код специальности"), get("Код специализации"))
+        profile = profile_key(get("Профиль"))
         direction = clean_text(get("Конкурсная группа.Направление (специальность)"))
-        scopes = faculty_scopes(get("Факультет"))
+        scopes = tuple(faculty_scopes(get("Факультет")))
+        level, _, match_mode, inferred_level = _resolve_plan_record(
+            indexes, level, form, code, specialization, profile, scopes, row_number,
+        )
+        match_modes[match_mode] += 1
+        inferred_levels += int(inferred_level)
         statement_status = clean_text(get("Состояние заявления")) or "Не указано"
         contract_status = clean_text(get("Состояние договора")) or "Не указано"
         person = clean_text(get("ФИО"))
@@ -429,7 +560,7 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
         item = {
             "person": person, "personKey": person_key, "contract": contract,
             "level": level, "form": form, "code": code, "directionName": direction,
-            "scopes": tuple(scopes), "joint": len(scopes) > 1,
+            "scopes": scopes, "joint": len(scopes) > 1,
             "citizenship": citizenship_group(get("Гражданство физического лица")),
             "priority": priority, "statementStatus": statement_status, "contractStatus": contract_status,
             "discountSize": discount_size, "discounted": discount_size > 0,
@@ -437,7 +568,7 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
             "listPrice": list_price, "contractAmount": contract_amount, "payment": payment,
             "signed": contract_status == "Подписан",
             "active": statement_status != "Отозвано" and contract_status != "Отменен",
-            "matched": (level, form, code) in plan_keys,
+            "matched": True,
         }
         rows.append(item)
     workbook.close()
@@ -517,7 +648,7 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
         _add_reported(operational, item["payment"])
     for item in p1_unique:
         _add_unique(operational, item)
-    unmatched = [item for item in rows if not item["matched"]]
+    unmatched: list[dict[str, Any]] = []
     partial = over = payment_without_signed = discount_mismatch = 0
     for item in unique_rows:
         if item["payment"] > 0 and item["contractAmount"] > 0:
@@ -563,7 +694,8 @@ def parse_contracts(path: Path, plan: dict[str, Any], snapshot_at: datetime) -> 
             "conflictingDuplicates": conflicting_duplicates,
             "unmatchedDirections": len({(item["level"], item["form"], item["code"], item["directionName"]) for item in unmatched}),
             "unmatchedRows": len(unmatched), "unmatchedPayment": money(sum((item["payment"] for item in unmatched), Decimal(0))),
-            "matchedDirectionCodes": len({item["code"] for item in rows if item["matched"]}),
+            "matchedDirectionCodes": len({item["code"] for item in rows}),
+            "matching": {"specializationCode": match_modes["specializationCode"], "profile": match_modes["profile"], "faculty": match_modes["faculty"], "baseCode": match_modes["baseCode"], "inferredLevels": inferred_levels},
             "discountFormulaMismatches": discount_mismatch, "partialPayments": partial,
             "overpayments": over, "paymentsWithoutSignedStatus": payment_without_signed,
             "planReconciliation": plan["reconciliation"],
@@ -667,8 +799,9 @@ def update(plan_path: Path, contracts_path: Path, snapshot_at: datetime, output_
             raise DataValidationError("План ПФХД изменился. Повторите с --allow-plan-change после явного согласования")
     snapshot = parse_contracts(contracts_path, plan, snapshot_at)
     history = build_history(_read_json(output_dir / "history.json", {}), snapshot)
+    public_plan = {key: value for key, value in plan.items() if key != "profileRecords"}
     payloads = {
-        Path("plan.json"): plan, Path("current.json"): snapshot, Path("history.json"): history,
+        Path("plan.json"): public_plan, Path("current.json"): snapshot, Path("history.json"): history,
         Path("snapshots") / f"{snapshot_at.date().isoformat()}.json": snapshot,
     }
     _public_privacy_check((str(path), payload) for path, payload in payloads.items())

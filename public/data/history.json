@@ -24,6 +24,30 @@
         "reference2025": 279000000,
         "remainingToTarget": 34976597
       }
+    },
+    {
+      "date": "2026-08-19",
+      "snapshotAt": "2026-08-19T23:59:00+03:00",
+      "publishedAt": "2026-08-20T04:19:36+03:00",
+      "metrics": {
+        "rows": 4189,
+        "contracts": 4170,
+        "active": 3929,
+        "signed": 2815,
+        "paid": 974,
+        "discounted": 2596,
+        "listPriceMin": 77500,
+        "listPriceMax": 408000,
+        "listPriceTotal": 773153650,
+        "contractAmount": 716289985,
+        "portfolio": 493471755,
+        "reportedPayment": 164224271,
+        "uniqueContractPayment": 163918871,
+        "uniquePeople": 2113,
+        "financialTarget": 178000000,
+        "reference2025": 279000000,
+        "remainingToTarget": 13775729
+      }
     }
   ]
 }

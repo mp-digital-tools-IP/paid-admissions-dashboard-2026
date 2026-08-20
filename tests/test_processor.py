@@ -10,8 +10,8 @@ sys.path.insert(0, str(ROOT / "tools"))
 from build_tuition_reference import build_reference  # noqa: E402
 
 from update_dashboard import (  # noqa: E402
-    build_history, citizenship_group, faculty_scopes, normalize_code, normalize_form,
-    normalize_level, parse_contracts, parse_plan, parse_snapshot_at,
+    build_history, canonical_faculty, citizenship_group, faculty_scopes, normalize_code, normalize_form,
+    normalize_level, parse_contracts, parse_plan, parse_snapshot_at, profile_key, specialization_code,
 )
 
 
@@ -27,6 +27,12 @@ class ProcessorUnitTests(unittest.TestCase):
 
     def test_joint_faculty_mapping(self):
         self.assertEqual(faculty_scopes("ФИТ(50/10)+ФЭУ(60/10)"), ["Факультет информационных технологий", "Факультет экономики и управления"])
+
+    def test_specialization_profile_and_full_faculty_normalization(self):
+        self.assertEqual(specialization_code("09.03.01", "1"), "09.03.01.01")
+        self.assertEqual(profile_key("Веб-разработка и нейросетевые технологии; Веб-технологии"), "веб разработка и нейросетевые технологии веб технологии")
+        self.assertEqual(canonical_faculty('Передовая инженерная школа технологического лидерства "FDR"'), 'Передовая инженерная школа технологического лидерства «FDR»')
+        self.assertEqual(canonical_faculty("Институт графики и искусства книги имени В.А. Фаворского"), "Институт графики и искусства книги имени В. А. Фаворского")
 
     def test_history_replaces_same_date(self):
         first = {"snapshotAt": "2026-08-13T10:00:00+03:00", "publishedAt": "2026-08-13T10:01:00+03:00", "metrics": {"reportedPayment": 10}}
@@ -90,6 +96,29 @@ class BaselineIntegrationTests(unittest.TestCase):
         text = json.dumps(self.snapshot, ensure_ascii=False).casefold()
         for forbidden in ("фио", "номер договора", "телефон", "email", "почта"):
             self.assertNotIn(forbidden, text)
+
+
+@unittest.skipUnless((ROOT / "Выгрузка договор от 19.08.2026.xlsx").exists(), "Локальная выгрузка 19.08 отсутствует")
+class ProfileMatchingIntegrationTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        plan = parse_plan(ROOT / "ПФХД2 (13.08.2026).xlsx")
+        cls.snapshot = parse_contracts(ROOT / "Выгрузка договор от 19.08.2026.xlsx", plan, datetime.fromisoformat("2026-08-19T23:59:00+03:00"))
+
+    def test_all_detail_rows_are_matched(self):
+        quality = self.snapshot["quality"]
+        self.assertEqual(quality["detailRows"], 4189)
+        self.assertEqual(quality["unmatchedRows"], 0)
+        self.assertEqual(quality["matching"]["inferredLevels"], 172)
+        self.assertEqual(sum(quality["matching"][key] for key in ("specializationCode", "profile", "faculty", "baseCode")), 4189)
+
+    def test_new_snapshot_totals(self):
+        metrics = self.snapshot["metrics"]
+        self.assertEqual(metrics["reportedPayment"], 164224271)
+        self.assertEqual(metrics["uniqueContractPayment"], 163918871)
+        self.assertEqual(metrics["contracts"], 4170)
+        self.assertEqual(metrics["uniquePeople"], 2113)
+
 
 
 if __name__ == "__main__":
